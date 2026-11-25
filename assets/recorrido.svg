@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="220" viewBox="0 0 1000 220">
+<style>
+.sans{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif} .mono{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace}
+.blink{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@keyframes draw{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}.line{stroke-dasharray:100;animation:draw 2.4s ease-out both}
+@keyframes pop{0%{opacity:0;transform:scale(.2)}70%{opacity:1;transform:scale(1.2)}100%{opacity:1;transform:scale(1)}}
+@keyframes up{from{opacity:0;transform:translate(0px,10px)}to{opacity:1;transform:translate(0px,0px)}}
+.anim{transform-box:fill-box;transform-origin:center}
+</style>
+
+<defs><linearGradient id="tl" gradientUnits="userSpaceOnUse" x1="90" y1="0" x2="910" y2="0"><stop offset="0" stop-color="#00C9A7"/><stop offset=".5" stop-color="#845EC2"/><stop offset="1" stop-color="#6FDA44"/></linearGradient></defs>
+<rect x=".5" y=".5" width="999" height="219" rx="14" fill="#0d1117" stroke="#30363d"/>
+<text x="28" y="32" class="mono" font-size="12" fill="#8b949e">// git log --reverse --oneline karen</text>
+<line x1="90" y1="104" x2="910" y2="104" stroke="#30363d" stroke-width="3" stroke-linecap="round"/>
+<line class="line" pathLength="100" x1="90" y1="104" x2="910" y2="104" stroke="url(#tl)" stroke-width="3" stroke-linecap="round"/>
+<circle r="4" fill="#fff" opacity="0">
+  <animateMotion dur="5s" begin="2.6s" repeatCount="indefinite" path="M90 104 H910"/>
+  <animate attributeName="opacity" values="0;0;.9;.9;0" keyTimes="0;.01;.05;.9;1" dur="5s" begin="2.6s" repeatCount="indefinite"/>
+</circle>
+
+<g class="anim" style="animation:pop .6s ease-out 0.2s both">
+  
+  <circle cx="90" cy="104" r="16" fill="#00C9A7" fill-opacity=".15"/>
+  <circle cx="90" cy="104" r="8" fill="#00C9A7" stroke="#0d1117" stroke-width="3"/>
+</g>
+<g style="animation:up .6s ease-out 0.35s both">
+  <text x="90" y="74" text-anchor="middle" class="mono" font-size="13" font-weight="700" fill="#00C9A7">2023</text>
+  <text x="90" y="148" text-anchor="middle" class="sans" font-size="15" font-weight="700" fill="#e6edf3">Primeros pasos</text>
+  <text x="90" y="168" text-anchor="middle" class="mono" font-size="11" fill="#8b949e">HTML · CSS · Git</text>
+</g>
+<g class="anim" style="animation:pop .6s ease-out 0.6s both">
+  
+  <circle cx="254" cy="104" r="16" fill="#e3b341" fill-opacity=".15"/>
+  <circle cx="254" cy="104" r="8" fill="#e3b341" stroke="#0d1117" stroke-width="3"/>
+</g>
+<g style="animation:up .6s ease-out 0.75s both">
+  <text x="254" y="74" text-anchor="middle" class="mono" font-size="13" font-weight="700" fill="#e3b341">2023</text>
+  <text x="254" y="148" text-anchor="middle" class="sans" font-size="15" font-weight="700" fill="#e6edf3">POO con Java</text>
+  <text x="254" y="168" text-anchor="middle" class="mono" font-size="11" fill="#8b949e">Java · NetBeans</text>
+</g>
+<g class="anim" style="animation:pop .6s ease-out 1.0s both">
+  
+  <circle cx="418" cy="104" r="16" fill="#845EC2" fill-opacity=".15"/>
+  <circle cx="418" cy="104" r="8" fill="#845EC2" stroke="#0d1117" stroke-width="3"/>
+</g>
+<g style="animation:up .6s ease-out 1.15s both">
+  <text x="418" y="74" text-anchor="middle" class="mono" font-size="13" font-weight="700" fill="#845EC2">2024</text>
+  <text x="418" y="148" text-anchor="middle" class="sans" font-size="15" font-weight="700" fill="#e6edf3">Back-End y APIs</text>
+  <text x="418" y="168" text-anchor="middle" class="mono" font-size="11" fill="#8b949e">PHP · Laravel · Python</text>
+</g>
+<g class="anim" style="animation:pop .6s ease-out 1.4s both">
+  
+  <circle cx="582" cy="104" r="16" fill="#6FDA44" fill-opacity=".15"/>
+  <circle cx="582" cy="104" r="8" fill="#6FDA44" stroke="#0d1117" stroke-width="3"/>
+</g>
+<g style="animation:up .6s ease-out 1.55s both">
+  <text x="582" y="74" text-anchor="middle" class="mono" font-size="13" font-weight="700" fill="#6FDA44">2025</text>
+  <text x="582" y="148" text-anchor="middle" class="sans" font-size="15" font-weight="700" fill="#e6edf3">Facturación</text>
+  <text x="582" y="168" text-anchor="middle" class="mono" font-size="11" fill="#8b949e">Angular · TS · SRI</text>
+</g>
+<g class="anim" style="animation:pop .6s ease-out 1.8s both">
+  
+  <circle cx="746" cy="104" r="16" fill="#00C9A7" fill-opacity=".15"/>
+  <circle cx="746" cy="104" r="8" fill="#00C9A7" stroke="#0d1117" stroke-width="3"/>
+</g>
+<g style="animation:up .6s ease-out 1.95s both">
+  <text x="746" y="74" text-anchor="middle" class="mono" font-size="13" font-weight="700" fill="#00C9A7">2025</text>
+  <text x="746" y="148" text-anchor="middle" class="sans" font-size="15" font-weight="700" fill="#e6edf3">Full-Stack</text>
+  <text x="746" y="168" text-anchor="middle" class="mono" font-size="11" fill="#8b949e">React · Express · JWT</text>
+</g>
+<g class="anim" style="animation:pop .6s ease-out 2.2s both">
+  <circle cx="910" cy="104" r="10" fill="none" stroke="#6FDA44" stroke-width="2"><animate attributeName="r" values="10;26" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1.6s" repeatCount="indefinite"/></circle>
+  <circle cx="910" cy="104" r="16" fill="#6FDA44" fill-opacity=".15"/>
+  <circle cx="910" cy="104" r="8" fill="#6FDA44" stroke="#0d1117" stroke-width="3"/>
+</g>
+<g style="animation:up .6s ease-out 2.35s both">
+  <text x="910" y="74" text-anchor="middle" class="mono" font-size="13" font-weight="700" fill="#6FDA44">HOY</text>
+  <text x="910" y="148" text-anchor="middle" class="sans" font-size="15" font-weight="700" fill="#e6edf3">¿Qué sigue?</text>
+  <text x="910" y="168" text-anchor="middle" class="mono" font-size="11" fill="#8b949e">abierta a nuevos retos</text>
+</g>
+
+</svg>

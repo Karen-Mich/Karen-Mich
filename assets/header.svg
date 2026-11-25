@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300">
+<style>
+.sans{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif} .mono{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace}
+.blink{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+
+.float{animation:float 8s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translate(0px,0px)}50%{transform:translate(0px,-16px)}}
+.d1{animation-delay:-2s}.d2{animation-delay:-4s}.d3{animation-delay:-6s}
+.in{animation:in 1.2s ease-out both}
+@keyframes in{from{opacity:0;transform:translate(0px,14px)}to{opacity:1;transform:translate(0px,0px)}}
+.i2{animation-delay:.3s}.i3{animation-delay:.6s}.i4{animation-delay:.9s}
+</style>
+
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#151b26"/></linearGradient>
+  <linearGradient id="name" x1="0" x2="1"><stop offset="0" stop-color="#6FDA44"/><stop offset=".5" stop-color="#00C9A7"/><stop offset="1" stop-color="#845EC2"/></linearGradient>
+  <filter id="blur" x="-1" y="-1" width="3" height="3"><feGaussianBlur stdDeviation="45"/></filter>
+  <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.1" fill="#30363d"/></pattern>
+  <clipPath id="card"><rect width="1000" height="300" rx="18"/></clipPath>
+  <clipPath id="cl0"><rect x="702" y="112" height="12" width="0"><animate attributeName="width" dur="7.0s" repeatCount="indefinite" values="0;0;156;156;0" keyTimes="0;0.060;0.140;0.92;1"/></rect></clipPath><clipPath id="cl1"><rect x="718" y="136" height="12" width="0"><animate attributeName="width" dur="7.0s" repeatCount="indefinite" values="0;0;132;132;0" keyTimes="0;0.160;0.240;0.92;1"/></rect></clipPath><clipPath id="cl2"><rect x="718" y="160" height="12" width="0"><animate attributeName="width" dur="7.0s" repeatCount="indefinite" values="0;0;132;132;0" keyTimes="0;0.260;0.340;0.92;1"/></rect></clipPath><clipPath id="cl3"><rect x="734" y="184" height="12" width="0"><animate attributeName="width" dur="7.0s" repeatCount="indefinite" values="0;0;142;142;0" keyTimes="0;0.360;0.440;0.92;1"/></rect></clipPath><clipPath id="cl4"><rect x="718" y="208" height="12" width="0"><animate attributeName="width" dur="7.0s" repeatCount="indefinite" values="0;0;24;24;0" keyTimes="0;0.460;0.540;0.92;1"/></rect></clipPath><clipPath id="cl5"><rect x="702" y="232" height="12" width="0"><animate attributeName="width" dur="7.0s" repeatCount="indefinite" values="0;0;116;116;0" keyTimes="0;0.560;0.640;0.92;1"/></rect></clipPath>
+</defs>
+<g clip-path="url(#card)">
+  <rect width="1000" height="300" fill="url(#bg)"/>
+  <rect width="1000" height="300" fill="url(#dots)" opacity=".55"/>
+  <circle cx="140" cy="30" r="120" fill="#6FDA44" opacity=".22" filter="url(#blur)">
+    <animate attributeName="cx" values="140;260;140" dur="14s" repeatCount="indefinite"/></circle>
+  <circle cx="900" cy="280" r="150" fill="#845EC2" opacity=".35" filter="url(#blur)">
+    <animate attributeName="cy" values="280;200;280" dur="12s" repeatCount="indefinite"/></circle>
+  <circle cx="560" cy="-20" r="100" fill="#00C9A7" opacity=".2" filter="url(#blur)">
+    <animate attributeName="cx" values="560;460;560" dur="16s" repeatCount="indefinite"/></circle>
+
+  <text x="545" y="80" class="mono float" font-size="26" fill="#00C9A7" opacity=".35">{ }</text>
+  <text x="590" y="270" class="mono float d1" font-size="24" fill="#845EC2" opacity=".45">&lt;/&gt;</text>
+  <text x="630" y="215" class="mono float d2" font-size="20" fill="#6FDA44" opacity=".3">;</text>
+  <text x="840" y="44" class="mono float d3" font-size="16" fill="#8b949e" opacity=".5">SELECT *</text>
+
+  <text x="60" y="92" class="mono in" font-size="18" fill="#6FDA44">&gt; hola, mundo. soy</text>
+  <text x="58" y="158" class="sans in i2" font-size="58" font-weight="800" fill="url(#name)">Karen Guatumillo</text>
+  <text x="60" y="200" class="sans in i3" font-size="21" fill="#c9d1d9">Estudiante de Ingeniería en Software</text>
+  <g class="in i4"><rect x="60" y="226" width="150" height="30" rx="15" fill="#6FDA44" fill-opacity=".14" stroke="#6FDA44" stroke-opacity=".6"/><text x="135.0" y="246" text-anchor="middle" class="sans" font-size="14" font-weight="600" fill="#6FDA44">Node.js · Express</text><rect x="222" y="226" width="140" height="30" rx="15" fill="#00C9A7" fill-opacity=".14" stroke="#00C9A7" stroke-opacity=".6"/><text x="292.0" y="246" text-anchor="middle" class="sans" font-size="14" font-weight="600" fill="#00C9A7">Angular · React</text><rect x="374" y="226" width="76" height="30" rx="15" fill="#845EC2" fill-opacity=".14" stroke="#845EC2" stroke-opacity=".6"/><text x="412.0" y="246" text-anchor="middle" class="sans" font-size="14" font-weight="600" fill="#845EC2">MySQL</text></g>
+
+  <g class="float d1">
+    <rect x="680" y="62" width="280" height="200" rx="12" fill="#0d1117" fill-opacity=".92" stroke="#30363d"/>
+    <circle cx="696" cy="78" r="4.5" fill="#ff5f56"/><circle cx="710" cy="78" r="4.5" fill="#ffbd2e"/><circle cx="724" cy="78" r="4.5" fill="#27c93f"/>
+    <text x="948" y="82" text-anchor="end" class="mono" font-size="11" fill="#8b949e">karen.java</text>
+    <line x1="680" y1="94" x2="960" y2="94" stroke="#30363d"/>
+    <text x="690" y="122" class="mono" font-size="10" fill="#30363d">1</text><g clip-path="url(#cl0)"><rect x="702" y="114" width="44" height="8" rx="4" fill="#845EC2"/><rect x="752" y="114" width="80" height="8" rx="4" fill="#6FDA44"/><rect x="838" y="114" width="20" height="8" rx="4" fill="#8b949e"/></g><text x="690" y="146" class="mono" font-size="10" fill="#30363d">2</text><g clip-path="url(#cl1)"><rect x="718" y="138" width="56" height="8" rx="4" fill="#00C9A7"/><rect x="780" y="138" width="70" height="8" rx="4" fill="#e6edf3"/></g><text x="690" y="170" class="mono" font-size="10" fill="#30363d">3</text><g clip-path="url(#cl2)"><rect x="718" y="162" width="30" height="8" rx="4" fill="#845EC2"/><rect x="754" y="162" width="96" height="8" rx="4" fill="#6FDA44"/></g><text x="690" y="194" class="mono" font-size="10" fill="#30363d">4</text><g clip-path="url(#cl3)"><rect x="734" y="186" width="40" height="8" rx="4" fill="#00C9A7"/><rect x="780" y="186" width="60" height="8" rx="4" fill="#8b949e"/><rect x="846" y="186" width="30" height="8" rx="4" fill="#e3b341"/></g><text x="690" y="218" class="mono" font-size="10" fill="#30363d">5</text><g clip-path="url(#cl4)"><rect x="718" y="210" width="24" height="8" rx="4" fill="#8b949e"/></g><text x="690" y="242" class="mono" font-size="10" fill="#30363d">6</text><g clip-path="url(#cl5)"><rect x="702" y="234" width="70" height="8" rx="4" fill="#845EC2"/><rect x="778" y="234" width="40" height="8" rx="4" fill="#6FDA44"/></g>
+  </g>
+</g>
+<rect x=".5" y=".5" width="999" height="299" rx="18" fill="none" stroke="#30363d"/>
+
+</svg>
