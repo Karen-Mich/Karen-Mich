@@ -1,7 +1,16 @@
+<!--
+  ✏️ ANTES DE PUBLICAR: busca y reemplaza estos textos en todo el archivo
+     TU_USUARIO        → tu usuario de GitHub
+     REPO_FACTURACION  → nombre del repo del sistema de facturación
+     REPO_VIAJES       → nombre del repo de la agencia de viajes
+     REPO_AGENDA       → nombre del repo de la agenda
+     TU_LINKEDIN / TU_CORREO → tus datos de contacto
+-->
+
 <!-- ============ BANNER ============ -->
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6FDA44,50:00C9A7,100:845EC2&height=220&section=header&text=Karen%20Guatumillo&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Software%20Engineering%20Student%20%E2%80%A2%20Back-End%20Developer&descAlignY=58&descSize=18&animation=fadeIn" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6FDA44,50:00C9A7,100:845EC2&height=230&section=header&text=Karen%20Guatumillo&fontSize=54&fontColor=ffffff&fontAlignY=36&desc=Software%20Engineering%20Student%20%E2%80%A2%20Back-End%20Developer&descAlignY=56&descSize=18&animation=twinkling" width="100%" />
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=6FDA44&center=true&vCenter=true&width=600&lines=%C2%A1Bienvenido+a+mi+perfil!+%F0%9F%91%8B;Estudiante+de+Ingenier%C3%ADa+en+Software+%F0%9F%8E%93;Back-End+Developer+%E2%9A%99%EF%B8%8F;Problem+Solver+%F0%9F%A7%A9;Open-Source+Enthusiast+%F0%9F%8C%B1" alt="Typing SVG" />
 
@@ -9,6 +18,16 @@
   <img src="https://komarev.com/ghpvc/?username=TU_USUARIO&label=Visitas&color=6FDA44&style=flat-square" alt="visitas" />
   <img src="https://img.shields.io/badge/Disponible%20para-Freelance-845EC2?style=flat-square" alt="freelance" />
   <img src="https://img.shields.io/badge/Idiomas-ES%20%7C%20EN-00C9A7?style=flat-square" alt="idiomas" />
+  <img src="https://img.shields.io/github/followers/TU_USUARIO?label=Seguidores&style=flat-square&color=6FDA44" alt="seguidores" />
+</p>
+
+<!-- Mini menú de navegación -->
+<p>
+  <a href="#-sobre-mí"><b>Sobre mí</b></a> ·
+  <a href="#-proyectos-destacados"><b>Proyectos</b></a> ·
+  <a href="#-en-el-laboratorio"><b>En construcción</b></a> ·
+  <a href="#%EF%B8%8F-tech-stack"><b>Stack</b></a> ·
+  <a href="#-conéctate-conmigo"><b>Contacto</b></a>
 </p>
 
 </div>
@@ -22,12 +41,12 @@
 
 ```js
 const karen = {
-  rol:        "Estudiante de Ingeniería en Software",
-  enfoque:    ["Back-End", "Aplicaciones web", "Bases de datos"],
-  aprendiendo:["React", "APIs REST", "Buenas prácticas"],
-  softSkills: ["Organizada", "Trabajo colaborativo", "Aprendizaje continuo"],
-  idiomas:    ["Español", "Inglés"],
-  frase:      "Siempre buscando nuevas formas de innovar 🚀"
+  rol:         "Estudiante de Ingeniería en Software",
+  enfoque:     ["Back-End", "Aplicaciones web", "Bases de datos"],
+  aprendiendo: ["React", "APIs REST", "Buenas prácticas"],
+  softSkills:  ["Organizada", "Trabajo colaborativo", "Aprendizaje continuo"],
+  idiomas:     ["Español", "Inglés"],
+  frase:       "Siempre buscando nuevas formas de innovar 🚀"
 };
 ```
 
@@ -43,39 +62,102 @@ const karen = {
 <!-- ============ PROYECTOS ============ -->
 ## 🚀 Proyectos destacados
 
+<!--
+  🖼️ VISTAS PREVIAS
+  Por defecto cada tarjeta usa la imagen de vista previa que GitHub genera
+  sola para cada repo (opengraph.githubassets.com). Funciona sin hacer nada.
+
+  Para que se vea MUCHO mejor, reemplázala por una captura o GIF real de tu app:
+    1. Sube la imagen a este repo, por ejemplo en assets/facturacion.gif
+    2. Cambia el src por:  ./assets/facturacion.gif
+  Tamaño recomendado: 1280x640 (proporción 2:1). Para GIFs usa ScreenToGif o Kap.
+-->
+
+<!-- ⭐ Proyecto estrella: vista grande -->
 <table>
   <tr>
-    <td width="33%" valign="top">
+    <td width="55%">
+      <a href="https://github.com/TU_USUARIO/REPO_FACTURACION">
+        <img src="https://opengraph.githubassets.com/1/TU_USUARIO/REPO_FACTURACION" alt="Vista previa Sistema de Facturación" width="100%" />
+      </a>
+    </td>
+    <td width="45%" valign="top">
+      <sub>⭐ PROYECTO ESTRELLA</sub>
       <h3>🧾 Sistema de Facturación</h3>
-      <p>Gestión de clientes, productos y emisión de facturas.</p>
+      <p>Gestión completa de clientes, productos e inventario con emisión de facturas y reportes de ventas.</p>
+      <p>
+        ✅ CRUD de clientes y productos<br/>
+        ✅ Cálculo automático de impuestos<br/>
+        ✅ Historial y reportes
+      </p>
       <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
       <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
       <br/><br/>
-      <a href="https://github.com/TU_USUARIO/REPO_FACTURACION">🔗 Ver repositorio</a>
-    </td>
-    <td width="33%" valign="top">
-      <h3>✈️ Agencia de Viajes</h3>
-      <p>Aplicación para consultar destinos y gestionar reservas.</p>
-      <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
-      <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
-      <img src="https://img.shields.io/badge/JS-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-      <br/><br/>
-      <a href="https://github.com/TU_USUARIO/REPO_VIAJES">🔗 Ver repositorio</a>
-    </td>
-    <td width="33%" valign="top">
-      <h3>📅 Agenda Inteligente</h3>
-      <p>Organiza tareas y recordatorios de forma simple.</p>
-      <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
-      <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" />
-      <br/><br/>
-      <a href="https://github.com/TU_USUARIO/REPO_AGENDA">🔗 Ver repositorio</a>
+      <a href="https://github.com/TU_USUARIO/REPO_FACTURACION"><img src="https://img.shields.io/badge/Código-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
     </td>
   </tr>
 </table>
 
-<!-- Alternativa: tarjetas automáticas con estadísticas del repo
-<a href="https://github.com/TU_USUARIO/REPO"><img src="https://github-readme-stats.vercel.app/api/pin/?username=TU_USUARIO&repo=REPO&theme=tokyonight&hide_border=true" /></a>
--->
+<!-- Resto de proyectos: cuadrícula 2 columnas -->
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/TU_USUARIO/REPO_VIAJES">
+        <img src="https://opengraph.githubassets.com/1/TU_USUARIO/REPO_VIAJES" alt="Vista previa Agencia de Viajes" width="100%" />
+      </a>
+      <h3>✈️ Agencia de Viajes</h3>
+      <p>Aplicación web para explorar destinos, comparar paquetes y gestionar reservas.</p>
+      <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
+      <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
+      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+      <br/><br/>
+      <a href="https://github.com/TU_USUARIO/REPO_VIAJES"><img src="https://img.shields.io/badge/Código-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+      <a href="https://TU_USUARIO.github.io/REPO_VIAJES"><img src="https://img.shields.io/badge/Demo%20en%20vivo-00C9A7?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/TU_USUARIO/REPO_AGENDA">
+        <img src="https://opengraph.githubassets.com/1/TU_USUARIO/REPO_AGENDA" alt="Vista previa Agenda Inteligente" width="100%" />
+      </a>
+      <h3>📅 Agenda Inteligente</h3>
+      <p>Organiza tareas, prioridades y recordatorios en una interfaz simple y rápida.</p>
+      <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
+      <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" />
+      <br/><br/>
+      <a href="https://github.com/TU_USUARIO/REPO_AGENDA"><img src="https://img.shields.io/badge/Código-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+      <a href="https://TU_USUARIO.github.io/REPO_AGENDA"><img src="https://img.shields.io/badge/Demo%20en%20vivo-00C9A7?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
+    </td>
+  </tr>
+</table>
+
+<!-- Más proyectos plegables, para no saturar el perfil -->
+<details>
+<summary><b>📂 Ver más proyectos</b></summary>
+<br/>
+
+<!-- Copia una fila por proyecto. Las tarjetas muestran estrellas y forks en vivo. -->
+<div align="center">
+  <a href="https://github.com/TU_USUARIO/OTRO_REPO_1">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=TU_USUARIO&repo=OTRO_REPO_1&theme=tokyonight&hide_border=true&title_color=6FDA44&icon_color=00C9A7" />
+  </a>
+  <a href="https://github.com/TU_USUARIO/OTRO_REPO_2">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=TU_USUARIO&repo=OTRO_REPO_2&theme=tokyonight&hide_border=true&title_color=6FDA44&icon_color=00C9A7" />
+  </a>
+</div>
+
+</details>
+
+---
+
+<!-- ============ EN CONSTRUCCIÓN ============ -->
+## 🧪 En el laboratorio
+
+```text
+🔨 API REST de gestión de inventario   ▓▓▓▓▓▓▓▓░░░░  65%   Java · Spring Boot
+🎨 Portafolio personal                 ▓▓▓▓▓░░░░░░░  40%   React
+📚 Curso: Bases de datos avanzadas     ▓▓▓▓▓▓▓▓▓▓░░  85%   SQL
+```
+
+<sub>Actualizo esta sección cuando avanzo. Cambia los textos y barras por lo que estés haciendo tú.</sub>
 
 ---
 
@@ -84,12 +166,20 @@ const karen = {
 
 <div align="center">
 
-| Categoría | Tecnologías |
-|:--|:--|
-| **Lenguajes** | <img src="https://skillicons.dev/icons?i=java,js,html,css" /> |
-| **Frontend** | <img src="https://skillicons.dev/icons?i=react,bootstrap" /> |
-| **Bases de datos** | <img src="https://skillicons.dev/icons?i=mysql" /> |
-| **Herramientas** | <img src="https://skillicons.dev/icons?i=git,github,vscode,discord" /> |
+<table>
+  <tr>
+    <td align="center"><b>Lenguajes</b></td>
+    <td align="center"><b>Frontend</b></td>
+    <td align="center"><b>Bases de datos</b></td>
+    <td align="center"><b>Herramientas</b></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://skillicons.dev/icons?i=java,js,html,css&perline=2" /></td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=react,bootstrap&perline=2" /></td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=mysql&perline=2" /></td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=git,github,vscode,discord&perline=2" /></td>
+  </tr>
+</table>
 
 </div>
 
@@ -126,6 +216,7 @@ const karen = {
 ---
 
 <!-- ============ SNAKE ============ -->
+<!-- Necesita el archivo .github/workflows/snake.yml en este mismo repo -->
 <div align="center">
 
 <picture>
