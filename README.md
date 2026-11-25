@@ -49,10 +49,9 @@
         <img src="./assets/proyecto-facturacion.svg" width="100%" alt="Vista previa animada del sistema de facturación" />
       </a>
       <h3>Sistema de Facturación</h3>
-      <p>Aplicación web en <b>Angular 20</b> para gestionar clientes y facturas: inicio de sesión, listado y formulario de clientes, listado de facturas y una librería propia de componentes reutilizables (tablas con paginador, menú, botones, inputs).</p>
+      <p>Frontend en <b>Angular 20</b> y Angular Material, en desarrollo. Ya tiene menú lateral, pantalla de inicio de sesión y gestión de clientes con tabla paginada y formulario con validaciones, construidos sobre una librería propia de componentes reutilizables. El módulo de facturas es el siguiente paso.</p>
       <img src="https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white" />
       <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-      <img src="https://img.shields.io/badge/PrimeNG-DD0031?style=flat-square&logo=primeng&logoColor=white" />
       <img src="https://img.shields.io/badge/Angular%20Material-3F51B5?style=flat-square&logo=angular&logoColor=white" />
       &nbsp;&nbsp;
       <a href="https://github.com/Karen-Mich/FacturacionProject"><b>Código →</b></a>
@@ -76,7 +75,7 @@
         <img src="./assets/proyecto-usuarios.svg" width="100%" alt="Vista previa animada de la gestión de usuarios full-stack" />
       </a>
       <h3>Gestión de Usuarios (Full-Stack)</h3>
-      <p>API REST con <b>Express + Sequelize + MySQL</b>: autenticación JWT, contraseñas con bcrypt, roles admin/usuario, validación con Joi y manejo centralizado de errores. Frontend en <b>React + Vite</b> con rutas protegidas y dashboard.</p>
+      <p>API REST con <b>Express + Sequelize + MySQL</b>: registro e inicio de sesión con JWT, contraseñas cifradas con bcrypt, listado con paginación y filtros, y manejo centralizado de errores. Frontend en <b>React + Vite</b> con rutas protegidas y dashboard.</p>
       <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
       <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" />
       <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />

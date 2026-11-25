@@ -350,7 +350,7 @@ def usuarios():
   <text x="160" y="321" text-anchor="middle" class="sans" font-size="14" font-weight="700" fill="{BG}">Ingresar</text>
 </g>
 <rect x="40" y="348" width="240" height="60" rx="8" fill="{BG}" stroke="{BORDER}"/>
-<text class="req mono anim" x="52" y="372" font-size="11" fill="{TEAL}">→ POST /api/usuarios/login</text>
+<text class="req mono anim" x="52" y="372" font-size="11" fill="{TEAL}">→ POST /usuarios/login</text>
 <text class="res mono anim" x="52" y="394" font-size="11" fill="{GREEN}">← 200 OK · token JWT ✓</text>
 
 <rect x="310" y="58" width="470" height="364" rx="14" fill="{BG2}" stroke="{BORDER}"/>
@@ -366,7 +366,7 @@ def usuarios():
 <line x1="320" y1="140" x2="770" y2="140" stroke="{BORDER}"/>
 {''.join(row_svg)}
 <text x="330" y="400" class="sans" font-size="12" fill="{MUTED}">Mostrando 4 usuarios</text>
-<text x="764" y="400" text-anchor="end" class="mono" font-size="11" fill="{TEAL}">GET /api/usuarios · Bearer</text>
+<text x="764" y="400" text-anchor="end" class="mono" font-size="11" fill="{TEAL}">GET /usuarios · Bearer token</text>
 """
     save("proyecto-usuarios.svg", svg(W, H, browser(W, H, "front-usuarios-psi.vercel.app/dashboard", inner), css))
 
