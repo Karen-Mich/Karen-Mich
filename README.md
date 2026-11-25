@@ -10,7 +10,7 @@
 
 <img src="./assets/header.svg" width="100%" alt="Karen Guatumillo · Estudiante de Ingeniería en Software" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=6FDA44&center=true&vCenter=true&width=640&lines=%C2%A1Bienvenido+a+mi+perfil!+%F0%9F%91%8B;Back-End+Developer+%E2%9A%99%EF%B8%8F;APIs+REST+con+Node.js+y+Express+%F0%9F%94%8C;Facturaci%C3%B3n+electr%C3%B3nica+para+el+SRI+%F0%9F%87%AA%F0%9F%87%A8;Angular+%C2%B7+React+%C2%B7+MySQL+%F0%9F%8C%B1" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=6FDA44&center=true&vCenter=true&width=640&lines=%C2%A1Bienvenido+a+mi+perfil!;Back-End+Developer;APIs+REST+con+Node.js+y+Express;Facturaci%C3%B3n+electr%C3%B3nica+para+el+SRI;Angular+%C2%B7+React+%C2%B7+MySQL" alt="Typing SVG" />
 
 <p>
   <img src="https://komarev.com/ghpvc/?username=Karen-Mich&label=Visitas&color=6FDA44&style=for-the-badge" alt="visitas" />
@@ -19,11 +19,11 @@
 </p>
 
 <p>
-  <a href="#-sobre-mí">👩‍💻 Sobre mí</a> &nbsp;•&nbsp;
-  <a href="#-proyectos-destacados">🚀 Proyectos</a> &nbsp;•&nbsp;
-  <a href="#-mi-recorrido">🧭 Recorrido</a> &nbsp;•&nbsp;
-  <a href="#%EF%B8%8F-tech-stack">🛠️ Stack</a> &nbsp;•&nbsp;
-  <a href="#-conéctate-conmigo">🤝 Contacto</a>
+  <a href="#sobre-mí">Sobre mí</a> &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="#proyectos-destacados">Proyectos</a> &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="#mi-recorrido">Recorrido</a> &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="#tech-stack">Stack</a> &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="#conéctate-conmigo">Contacto</a>
 </p>
 
 </div>
@@ -31,7 +31,7 @@
 <br/>
 
 <!-- ============ SOBRE MÍ ============ -->
-## 👩‍💻 Sobre mí
+## Sobre mí
 
 <div align="center">
   <img src="./assets/terminal.svg" width="100%" alt="Terminal: whoami → Karen Guatumillo, Estudiante de Ingeniería en Software. Enfoque: Back-End, APIs REST y facturación electrónica. Proyectos: facturacion-angular, sri-invoice-signer, api-usuarios, front-usuarios." />
@@ -40,7 +40,7 @@
 <br/>
 
 <!-- ============ PROYECTOS ============ -->
-## 🚀 Proyectos destacados
+## Proyectos destacados
 
 <table>
   <tr>
@@ -48,14 +48,14 @@
       <a href="https://github.com/Karen-Mich/FacturacionProject">
         <img src="./assets/proyecto-facturacion.svg" width="100%" alt="Vista previa animada del sistema de facturación" />
       </a>
-      <h3>🧾 Sistema de Facturación &nbsp;<sup>⭐ destacado</sup></h3>
+      <h3>Sistema de Facturación</h3>
       <p>Aplicación web en <b>Angular 20</b> para gestionar clientes y facturas: inicio de sesión, listado y formulario de clientes, listado de facturas y una librería propia de componentes reutilizables (tablas con paginador, menú, botones, inputs).</p>
       <img src="https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white" />
       <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
       <img src="https://img.shields.io/badge/PrimeNG-DD0031?style=flat-square&logo=primeng&logoColor=white" />
       <img src="https://img.shields.io/badge/Angular%20Material-3F51B5?style=flat-square&logo=angular&logoColor=white" />
       &nbsp;&nbsp;
-      <a href="https://github.com/Karen-Mich/FacturacionProject"><b>📂 Código</b></a>
+      <a href="https://github.com/Karen-Mich/FacturacionProject"><b>Código →</b></a>
     </td>
   </tr>
   <tr>
@@ -63,34 +63,34 @@
       <a href="https://github.com/Karen-Mich/sri-invoice-signer">
         <img src="./assets/proyecto-firma-sri.svg" width="100%" alt="Vista previa animada del firmador de facturas para el SRI" />
       </a>
-      <h3>🔏 Firmador de facturas SRI 🇪🇨</h3>
+      <h3>Firmador de facturas SRI</h3>
       <p>Librería en TypeScript que firma facturas y notas de débito electrónicas con <b>XAdES-BES</b> según la especificación del SRI de Ecuador. Sin OpenSSL ni binarios externos; funciona en cualquier plataforma con Node.js. Incluye pruebas con Jest.</p>
       <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
       <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
       <img src="https://img.shields.io/badge/Jest-C21325?style=flat-square&logo=jest&logoColor=white" />
       <br/><br/>
-      <a href="https://github.com/Karen-Mich/sri-invoice-signer"><b>📂 Código</b></a>
+      <a href="https://github.com/Karen-Mich/sri-invoice-signer"><b>Código →</b></a>
     </td>
     <td width="50%" valign="top">
       <a href="https://front-usuarios-psi.vercel.app">
         <img src="./assets/proyecto-usuarios.svg" width="100%" alt="Vista previa animada de la gestión de usuarios full-stack" />
       </a>
-      <h3>👥 Gestión de Usuarios (Full-Stack)</h3>
+      <h3>Gestión de Usuarios (Full-Stack)</h3>
       <p>API REST con <b>Express + Sequelize + MySQL</b>: autenticación JWT, contraseñas con bcrypt, roles admin/usuario, validación con Joi y manejo centralizado de errores. Frontend en <b>React + Vite</b> con rutas protegidas y dashboard.</p>
       <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
       <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" />
       <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
       <img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" />
       <br/><br/>
-      <a href="https://github.com/Karen-Mich/api-usuarios-backend"><b>📂 API</b></a> &nbsp;·&nbsp;
-      <a href="https://github.com/Karen-Mich/front_usuarios"><b>📂 Frontend</b></a> &nbsp;·&nbsp;
-      <a href="https://front-usuarios-psi.vercel.app"><b>🌐 Demo</b></a>
+      <a href="https://github.com/Karen-Mich/api-usuarios-backend"><b>API →</b></a> &nbsp;·&nbsp;
+      <a href="https://github.com/Karen-Mich/front_usuarios"><b>Frontend →</b></a> &nbsp;·&nbsp;
+      <a href="https://front-usuarios-psi.vercel.app"><b>Demo en vivo →</b></a>
     </td>
   </tr>
 </table>
 
 <details>
-<summary><b>📂 Ver más proyectos</b></summary>
+<summary><b>Ver más proyectos</b></summary>
 <br/>
 
 | Proyecto | Descripción | Tecnologías |
@@ -100,14 +100,14 @@
 | [ProyectoFinalCV](https://github.com/Karen-Mich/ProyectoFinalCV) | Proyecto final de programación en Java | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) |
 | [Integral](https://github.com/Karen-Mich/Integral) | Proyecto integrador en PHP | ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white) |
 | [RegistroAsistencia](https://github.com/Karen-Mich/RegistroAsistencia) | Registro de asistencia web | ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) |
-| [MiPagina](https://github.com/Karen-Mich/MiPagina) · [🌐 ver](https://karen-mich.github.io/MiPagina/) | Mi primera página publicada con GitHub Pages | ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) |
+| [MiPagina](https://github.com/Karen-Mich/MiPagina) · [sitio](https://karen-mich.github.io/MiPagina/) | Mi primera página publicada con GitHub Pages | ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) |
 
 </details>
 
 <br/>
 
 <!-- ============ RECORRIDO ============ -->
-## 🧭 Mi recorrido
+## Mi recorrido
 
 <div align="center">
   <img src="./assets/recorrido.svg" width="100%" alt="Recorrido: 2023 HTML, CSS y Git; 2023 Java; 2024 PHP, Laravel y Python; 2025 Angular y facturación SRI; 2025 React, Express y JWT; hoy, abierta a nuevos retos." />
@@ -116,28 +116,16 @@
 <br/>
 
 <!-- ============ STACK ============ -->
-## 🛠️ Tech Stack
+## Tech Stack
 
-<img align="right" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/601014116770475.6068beff4640a.gif" width="340" alt="coding gif" />
-
-**Lenguajes**<br/>
-<img src="https://skillicons.dev/icons?i=ts,js,java,php,py,html,css" />
-
-**Frontend**<br/>
-<img src="https://skillicons.dev/icons?i=angular,react,vite,bootstrap" />
-
-**Back-End y bases de datos**<br/>
-<img src="https://skillicons.dev/icons?i=nodejs,express,laravel,mysql" />
-
-**Herramientas**<br/>
-<img src="https://skillicons.dev/icons?i=git,github,vscode,vercel,postman,jest" />
-
-<br clear="right"/>
+<div align="center">
+  <img src="./assets/stack.svg" width="100%" alt="Tech stack: TypeScript, JavaScript, Java, PHP, Python, HTML, CSS, Angular, React, Vite, Bootstrap, Node.js, Express, Laravel, MySQL, Git, GitHub, VS Code, Vercel, Postman y Jest" />
+</div>
 
 <br/>
 
 <!-- ============ ESTADÍSTICAS ============ -->
-## 📊 Estadísticas
+## Estadísticas
 
 <div align="center">
 
@@ -153,7 +141,7 @@
 <br/>
 
 <!-- ============ CONTACTO ============ -->
-## 🤝 Conéctate conmigo
+## Conéctate conmigo
 
 <div align="center">
 
@@ -176,7 +164,7 @@
 
 <br/><br/>
 
-<i>Gracias por visitar mi perfil. ¡Espero que encuentres algo interesante! 🌷</i>
+<i>Gracias por visitar mi perfil. ¡Espero que encuentres algo interesante!</i>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:845EC2,50:00C9A7,100:6FDA44&height=120&section=footer" width="100%" />
 

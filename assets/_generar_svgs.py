@@ -539,9 +539,89 @@ def recorrido():
     save("recorrido.svg", svg(W, H, body, css))
 
 
+# ───────────────────────── TECH STACK (cuadrícula uniforme) ─────────────────────────
+def stack():
+    """Descarga los iconos de skillicons.dev y los incrusta (las imágenes de GitHub no cargan recursos externos)."""
+    import re
+    import urllib.request
+
+    cats = {
+        "Lenguajes": TEAL,
+        "Frontend": PURPLE,
+        "Back-End y BD": GREEN,
+        "Herramientas": "#e3b341",
+    }
+    items = [
+        ("ts", "TypeScript", "Lenguajes"), ("js", "JavaScript", "Lenguajes"), ("java", "Java", "Lenguajes"),
+        ("php", "PHP", "Lenguajes"), ("py", "Python", "Lenguajes"), ("html", "HTML", "Lenguajes"),
+        ("css", "CSS", "Lenguajes"),
+        ("angular", "Angular", "Frontend"), ("react", "React", "Frontend"), ("vite", "Vite", "Frontend"),
+        ("bootstrap", "Bootstrap", "Frontend"),
+        ("nodejs", "Node.js", "Back-End y BD"), ("express", "Express", "Back-End y BD"),
+        ("laravel", "Laravel", "Back-End y BD"), ("mysql", "MySQL", "Back-End y BD"),
+        ("git", "Git", "Herramientas"), ("github", "GitHub", "Herramientas"), ("vscode", "VS Code", "Herramientas"),
+        ("vercel", "Vercel", "Herramientas"), ("postman", "Postman", "Herramientas"), ("jest", "Jest", "Herramientas"),
+    ]
+
+    def icon(key, n):
+        req = urllib.request.Request(f"https://skillicons.dev/icons?i={key}", headers={"User-Agent": "Mozilla/5.0"})
+        raw = urllib.request.urlopen(req, timeout=20).read().decode("utf-8")
+        start = raw.index("<svg", raw.index("<svg") + 4)
+        end = raw.rindex("</svg>", 0, raw.rindex("</svg>")) + len("</svg>")
+        inner = raw[start:end]
+        inner = re.sub(r'id="([^"]+)"', lambda m: f'id="i{n}-{m.group(1)}"', inner)
+        inner = re.sub(r"url\(#([^)]+)\)", lambda m: f"url(#i{n}-{m.group(1)})", inner)
+        inner = re.sub(r'href="#([^"]+)"', lambda m: f'href="#i{n}-{m.group(1)}"', inner)
+        return inner
+
+    W, cols = 1000, 7
+    tw, th, gap = 120, 116, 16
+    x0 = (W - (cols * tw + (cols - 1) * gap)) / 2
+    y0 = 78
+    rows = (len(items) + cols - 1) // cols
+    H = y0 + rows * th + (rows - 1) * gap + 30
+    css = (
+        "@keyframes pop{0%{opacity:0;transform:translate(0px,14px) scale(.9)}100%{opacity:1;transform:translate(0px,0px) scale(1)}}\n"
+        ".anim{transform-box:fill-box;transform-origin:center}\n"
+        "@keyframes glow{0%,100%{opacity:.35}50%{opacity:1}}\n"
+    )
+    tiles = []
+    for n, (key, label, cat) in enumerate(items):
+        r, c = divmod(n, cols)
+        x = x0 + c * (tw + gap)
+        y = y0 + r * (th + gap)
+        color = cats[cat]
+        d = 0.1 + n * 0.06
+        tiles.append(f"""
+<g class="anim" style="animation:pop .5s ease-out {d:.2f}s both">
+  <rect x="{x}" y="{y}" width="{tw}" height="{th}" rx="14" fill="{BG2}" stroke="{BORDER}"/>
+  <rect x="{x + 34}" y="{y + th - 4}" width="{tw - 68}" height="3" rx="1.5" fill="{color}" style="animation:glow 3s ease-in-out {n * 0.15:.2f}s infinite"/>
+  <svg x="{x + (tw - 56) / 2}" y="{y + 16}" width="56" height="56" viewBox="0 0 256 256">{icon(key, n)}</svg>
+  <text x="{x + tw / 2}" y="{y + 94}" text-anchor="middle" class="sans" font-size="13.5" font-weight="600" fill="{TXT}">{label}</text>
+</g>""")
+
+    legend, lx = [], W - 32
+    for name, color in reversed(list(cats.items())):
+        w = len(name) * 7.4 + 22
+        lx -= w
+        legend.append(
+            f'<circle cx="{lx + 6}" cy="38" r="5" fill="{color}"/>'
+            f'<text x="{lx + 16}" y="43" class="sans" font-size="13" fill="{MUTED}">{name}</text>'
+        )
+        lx -= 14
+    body = f"""
+<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="16" fill="{BG}" stroke="{BORDER}"/>
+<text x="32" y="43" class="mono" font-size="13" fill="{MUTED}">// lo que uso para construir</text>
+{''.join(legend)}
+{''.join(tiles)}
+"""
+    save("stack.svg", svg(W, H, body, css))
+
+
 header()
 terminal()
 facturacion()
 usuarios()
 firma()
 recorrido()
+stack()
